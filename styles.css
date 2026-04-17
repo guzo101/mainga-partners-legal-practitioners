@@ -569,6 +569,33 @@ p {
   background: #fff;
 }
 
+.leader-profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.leader-photo-wrap {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.leader-photo {
+  width: 100%;
+  max-width: 430px;
+  display: block;
+  margin: 0 auto;
+}
+
+.leader-copy h2,
+.leader-copy .eyebrow {
+  text-align: left;
+}
+
 .map-frame {
   margin-top: 1rem;
   border: 1px solid var(--border);
@@ -749,6 +776,11 @@ p {
 
   .contact-grid {
     grid-template-columns: 1fr 1.1fr;
+  }
+
+  .leader-profile {
+    grid-template-columns: minmax(260px, 430px) 1fr;
+    gap: 1.8rem;
   }
 
   .footer-grid {
