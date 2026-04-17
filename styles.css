@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 :root {
-  --bg: #f5f4f1;
+  --bg: #f4eee7;
   --surface: #ffffff;
-  --surface-muted: #fbf8f3;
-  --text: #1d2430;
-  --text-muted: #5a6475;
-  --border: #d9d6cf;
-  --brand: #0f2341;
-  --brand-soft: #1d3459;
-  --gold: #b99758;
-  --gold-soft: #d4b980;
+  --surface-muted: #f8f1ea;
+  --text: #2f2020;
+  --text-muted: #6f5552;
+  --border: #decfc4;
+  --brand: #6f1f2d;
+  --brand-soft: #8a2f3f;
+  --gold: #c9a27d;
+  --gold-soft: #ddc0a2;
   --radius: 12px;
-  --shadow: 0 14px 30px rgba(15, 35, 65, 0.08);
+  --shadow: 0 14px 30px rgba(111, 31, 45, 0.1);
 }
 
 *,
@@ -248,7 +248,7 @@ p {
 
 .hero {
   background-image:
-    linear-gradient(112deg, rgba(10, 23, 43, 0.86), rgba(10, 23, 43, 0.58)),
+    linear-gradient(112deg, rgba(83, 18, 32, 0.86), rgba(83, 18, 32, 0.6)),
     url("./Assets/NewGroupPic.svg");
   background-size: cover;
   background-position: center 28%;
@@ -320,9 +320,9 @@ p {
 }
 
 .hero .hero-card {
-  background: rgba(10, 23, 43, 0.48);
+  background: rgba(83, 18, 32, 0.48);
   border: 1px solid rgba(255, 255, 255, 0.28);
-  box-shadow: 0 18px 34px rgba(2, 10, 24, 0.35);
+  box-shadow: 0 18px 34px rgba(42, 9, 17, 0.35);
   backdrop-filter: blur(3px);
 }
 
@@ -373,7 +373,7 @@ p {
   border-radius: 10px;
   padding: 0.72rem 0.84rem;
   font-weight: 500;
-  color: #31435f;
+  color: #5f3535;
 }
 
 .issues-actions {
@@ -417,7 +417,7 @@ p {
   justify-content: center;
   text-align: center;
   padding: 0.55rem;
-  box-shadow: 0 6px 16px rgba(15, 35, 65, 0.05);
+  box-shadow: 0 6px 16px rgba(111, 31, 45, 0.06);
 }
 
 @keyframes clientsPass {
@@ -430,7 +430,7 @@ p {
 }
 
 .client-card span {
-  color: #415470;
+  color: #704545;
   font-weight: 700;
   font-size: 0.96rem;
 }
@@ -504,7 +504,7 @@ p {
   border: 1px solid var(--border);
   border-left: 4px solid var(--gold);
   border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(15, 35, 65, 0.05);
+  box-shadow: 0 6px 16px rgba(111, 31, 45, 0.06);
 }
 
 .ticker-item p {
@@ -569,6 +569,52 @@ p {
   background: #fff;
 }
 
+.map-frame {
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: #fff;
+}
+
+.map-frame iframe {
+  width: 100%;
+  min-height: 320px;
+  border: 0;
+}
+
+.video-panel {
+  margin-top: 1rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.office-tour-video {
+  width: 100%;
+  max-height: 520px;
+  display: block;
+  background: #000;
+}
+
+.video-note {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.calendly-inline-widget {
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  background: #fff;
+  overflow: hidden;
+}
+
 .final-cta {
   border-top: 1px solid var(--border);
   padding-top: 2.8rem;
@@ -580,9 +626,9 @@ p {
 }
 
 .site-footer {
-  border-top: 1px solid #4e5b6b;
-  background: #3f4a58;
-  color: #e8edf3;
+  border-top: 1px solid #5f2732;
+  background: #4d1823;
+  color: #f5ece7;
   padding: 2.4rem 0 1.2rem;
 }
 
@@ -595,17 +641,17 @@ p {
 .footer-brand p {
   margin: 0.5rem 0 0;
   max-width: 26ch;
-  color: #d0d8e2;
+  color: #eadbd3;
 }
 
 .site-footer .logo {
-  color: #f5f8fc;
+  color: #fff4ee;
   font-size: 1.3rem;
   letter-spacing: 0.02em;
 }
 
 .site-footer .logo::first-letter {
-  color: #22a4cf;
+  color: #f0c9a3;
 }
 
 .footer-links {
@@ -616,7 +662,7 @@ p {
 
 .disclaimer {
   margin: 0;
-  color: #d0d8e2;
+  color: #eadbd3;
   font-size: 0.9rem;
 }
 
@@ -627,7 +673,7 @@ p {
 }
 
 .site-footer a {
-  color: #7bc4e4;
+  color: #f4cba7;
   text-decoration: none;
 }
 
@@ -640,7 +686,7 @@ p {
 }
 
 .footer-bottom {
-  border-top: 1px solid #5b6979;
+  border-top: 1px solid #743040;
   margin-top: 1rem;
   padding-top: 0.8rem;
   text-align: center;
