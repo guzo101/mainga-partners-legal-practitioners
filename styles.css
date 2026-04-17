@@ -304,7 +304,6 @@ p {
 .hero-card,
 .info-card,
 .stat-card,
-.testimonial-card,
 .contact-panel {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -392,64 +391,8 @@ p {
   background: #fff;
 }
 
-.clients-grid {
-  margin-top: 1.4rem;
-  overflow: hidden;
-  width: 100%;
-}
-
-.clients-track {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 0.9rem;
-  width: max-content;
-  animation: clientsPass 95s linear infinite;
-}
-
-.client-card {
-  min-height: 68px;
-  flex: 0 0 160px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0.55rem;
-  box-shadow: 0 6px 16px rgba(111, 31, 45, 0.06);
-}
-
-@keyframes clientsPass {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.client-card span {
-  color: #704545;
-  font-weight: 700;
-  font-size: 0.96rem;
-}
-
-.client-logo {
-  width: 100%;
-  height: 40px;
-  object-fit: contain;
-  filter: grayscale(1) contrast(1.05) brightness(0.35);
-  opacity: 0.92;
-}
-
-.client-card:hover .client-logo {
-  opacity: 1;
-}
-
 .stat-card,
-.info-card,
-.testimonial-card {
+.info-card {
   padding: 1.1rem 1.2rem;
   font-size: 0.9rem;
 }
@@ -470,60 +413,6 @@ p {
 
 .steps-list li {
   margin-bottom: 0.7rem;
-}
-
-.testimonial-card {
-  margin: 0;
-  border-left: 4px solid var(--gold);
-}
-
-.testimonial-card cite {
-  font-style: normal;
-  color: var(--text-muted);
-}
-
-.testimonials-ticker {
-  margin-top: 1.5rem;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.ticker-track {
-  display: flex;
-  gap: 1rem;
-  width: max-content;
-  animation: testimonialScroll 70s linear infinite;
-}
-
-.ticker-item {
-  min-width: 300px;
-  max-width: 300px;
-  padding: 0.85rem 1rem;
-  font-size: 0.88rem;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--gold);
-  border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(111, 31, 45, 0.06);
-}
-
-.ticker-item p {
-  margin: 0 0 0.6rem;
-}
-
-.ticker-item cite {
-  color: var(--text-muted);
-  font-style: normal;
-  font-size: 0.92rem;
-}
-
-@keyframes testimonialScroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
 }
 
 .section-cta-inline {
